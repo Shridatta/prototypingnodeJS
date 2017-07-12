@@ -16,3 +16,11 @@ batman.name="Batman";
 shridatta.givelife(batman);
 console.log("Shridatta = " + shridatta.life);
 console.log("Batman = " + batman.life);
+
+User.prototype.uppercut = function uppercut (targetplayer) {
+    targetplayer.life -= 3;
+    console.log(this.name + " just uppercutted " + targetplayer.name);
+};
+batman.uppercut(shridatta);
+console.log("Shridatta = " + shridatta.life);
+console.log("Batman = " + batman.life);
