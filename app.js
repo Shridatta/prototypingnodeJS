@@ -24,3 +24,7 @@ User.prototype.uppercut = function uppercut (targetplayer) {
 batman.uppercut(shridatta);
 console.log("Shridatta = " + shridatta.life);
 console.log("Batman = " + batman.life);
+
+User.prototype.magic = 60;
+console.log("Magical points of shridatta = " + shridatta.magic);
+console.log("Magical points of batman = " + batman.magic);
